@@ -7,7 +7,9 @@ body{
 .pointer{
   cursor: pointer;
 }
-
+a, a:hover, a:visited, a:active{
+  color: #ffffff;
+}
 /*  CSS For About Section */
 /* CSS For Header (NAV) section inside frontpage */
 .nav {
@@ -262,9 +264,7 @@ color: #ffffff;
  height: 50px;
  text-align: center;
 }
-.titleBox a{
-  color: #ffffff;
-}
+
 .aboutBox{
   position: absolute;
   bottom: 0;
@@ -332,6 +332,11 @@ color: #ffffff;
  #contact-form select,
  #contact-form textarea {
      width: 40%;
+ }
+
+ #frontpage p, #frontpage h3{
+   padding-left: 10%;
+   padding-right: 10%;
  }
 
 }
@@ -409,7 +414,7 @@ form{
     background-color:#880c30;
     color:#FFF;
     border:none;
-    display: block;;
+    display: block;
     margin-bottom:0px;
     margin-right:6px;
 }
