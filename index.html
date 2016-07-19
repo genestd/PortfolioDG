@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+      <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pontano+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  </head>
+
+  <body class="no-touch">
+    <header id="home">
+      <nav class="nav">
+        <a id="menu-toggle" class="anchor-link pointer" ><i class="fa fa-bars fa-lg"></i></a>
+        <ul class="simple-toggle" id="menu">
+          <li><a href="#frontpage"><i class="fa fa-home"></i>Home</li></a>
+          <li><a href="#portfolio"><i class="fa fa-code"></i>Portfolio</li></a>
+          <li><a href="#contact"><i class="fa fa-user"></i>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="frontpage">
+     <h1><strong>David Genest</strong></h1>
+     <h3>Portland, OR</h3>
+     <!-- start flip container -->
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  	   <div class="flipper pointer">
+ 		    <div class="front">
+			   <img class="img img-responsive" src="dg_logo.png" id="myLogo" />
+		    </div>
+		    <div class="back">
+			   <img class="img img-responsive img-circle" src = "dave.jpg" id="myPic"/>
+	      </div>
+	     </div>
+      </div>
+      <!-- end flip container -->
+      <div class="container-fluid" id="about">
+      <div class="row">
+        <div class="col-xs-6"><h3>Systems Analyst</h3>
+          <p>I am a systems analyst with over 20 years of experience in the financial services sector.
+          I've held all roles in the development lifecycle, from analyst to developer to tester.
+          My daily work designing solutions for clients keeps me busy, but I have a passion for development.
+        </p>
+        </div>
+        <div class="col-xs-6"><h3>Web Developer</h3>
+          <p>I am also a self-taught web-developer with a degree in Computer Science.
+             This portfolio and the projects you see below were created as part of the FreeCodeCamp curriculum.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="wrap">
+      <h1><strong>Responsive.  Fast.  Simple.</strong><br><br></h1>
+      <div class="box">
+        <div class="boxInner">
+         <img src="tribute-preview.png" class="imgPreview"/>
+         <div class="titleBox"><a href="https://genestd.github.io/Tribute/" target="_blank">Tribute Page</a></div>
+         <div class="aboutBox">This page was created for the <a href="www.freecodecamp.com" target="_blank">FreeCodeCamp</a> tribute project.  It was the first page I ever built.
+          <br><br>Tools: <i class="fa fa-lg fa-html5"></i>|<i class="fa fa-css3 fa-lg"></i>|<i class="fa fa-lg fa-codepen"></i>| Bootstrap |<i class="fa fa-lg fa-github"></i>
+         </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="boxInner">
+          <img src="RQM-preview.png" class="imgPreview"/>
+          <div class="titleBox"><a href="https://genestd.github.io/RQM/" target="_blank">Random Quote Machine</a></div>
+          <div class="aboutBox">
+            This project introduced the concept of using APIs to connect to services.  I chose the Forismatic API for quotes and Twitter to share them.
+            <br><br>Tools: <i class="fa fa-lg fa-html5"></i>|<i class="fa fa-css3 fa-lg"></i>|<i class="fa fa-lg fa-codepen"></i>| Bootstrap |<i class="fa fa-lg fa-github"></i>| Javascript | Atom
+          </div>
+         </div>
+     </div>
+     <div class="box">
+       <div class="boxInner">
+         <img src="weather-preview.png" class="imgPreview"/>
+         <div class="titleBox"><a href="https://genestd.github.io/weather/" target="_blank">Instant Weather</a></div>
+         <div class="aboutBox">The design of this project was inspired by the dashboard style of mobile app (like Fitbit).  It uses the Forecast.io weather data API and Google's geolocation API.  The icons come from Erik Flowers' github project.
+          <br><br>Tools: <i class="fa fa-lg fa-html5"></i>|<i class="fa fa-css3 fa-lg"></i>| <i class="fa fa-lg fa-github"></i>| Javascript | Atom
+         </div>
+       </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+       <img src="twitch-preview.png" class="imgPreview"/>
+      <div class="titleBox"><a href="https://genestd.github.io/twitchVwr/" target="_blank">Twitch Viewer</a></div>
+      <div class="aboutBox">A project to find and display Twitch.tv users. Add and remove channels and preview the streams.
+        <br><br>Tools: <i class="fa fa-lg fa-html5"></i>|<i class="fa fa-css3 fa-lg"></i>| <i class="fa fa-lg fa-github"></i>|<i class="fa fa-lg fa-twitch"></i>| Javascript | Atom
+       </div>
+      </div>
+    </div>
+
+ </div>
+ <!-- end of flex container -->
+ <div class="row">
+   <div class="col-xs-12">
+     Like what you see?  Check out even more projects!
+     <button type="button" id="btnChev" data-toggle="collapse" data-target="#moreProjects" aria-expanded="false" aria-controls="moreProjects">
+       <i class="fa fa-chevron-down"></i>
+     </button>
+   </div>
+ </div>
+ <!-- This div is initially hidden; can be expanded
+      to show additional project -->
+ <div class="collapse" id="moreProjects" aria-expanded="false">
+   <div class="wrap">
+    <div class="box">
+     <div class="boxInner">
+      <img src="http://placehold.it/595x715" class="imgPreview"/>
+      <div class="titleBox">Coming soon</div>
+      <div class="aboutBox">Some stuff about this project</div>
+     </div>
+    </div>
+    <div class="box">
+     <div class="boxInner">
+       <img src="http://placehold.it/595x715" class="imgPreview"/>
+       <div class="titleBox">Coming soon</div>
+       <div class="aboutBox">Some stuff about this project</div>
+     </div>
+   </div>
+   <div class="box">
+    <div class="boxInner">
+      <img src="http://placehold.it/595x715" class="imgPreview"/>
+      <div class="titleBox">Coming soon</div>
+      <div class="aboutBox">Some stuff about this project
+      </div>
+    </div>
+   </div>
+   <div class="box">
+    <div class="boxInner">
+      <img src="http://placehold.it/595x715" class="imgPreview"/>
+      <div class="titleBox">Coming soon</div>
+      <div class="aboutBox">Some stuff about this project</div>
+    </div>
+  </div>
+ </div>
+ <!-- End of hidden projects "wrap"-->
+ </div>
+ <!-- End of Hidden projects "collapse" -->
+ </section>
+
+  <section id="contact">
+    <div id="contact-form" class="container-fluid ">
+        <h1><strong>Get In Touch!</strong></h1>
+        <h5>Send a message with your name and email</h5>
+        <ul id="errors" class="">
+            <li id="info">There were some problems with your form submission:</li>
+        </ul>
+        <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+        <form method="post" id="gform" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+            <label for="entry.1745779267">Name: <span class="required">*</span></label>
+            <input type="text" id="entry.1745779267" name="name" value="" placeholder="John Doe" required="required" />
+
+            <label for="entry.1529915612">Email Address: <span class="required">*</span></label>
+            <input type="email" id="entry.1529915612" name="email" value="" placeholder="johndoe@example.com" required="required" />
+
+            <label for="entry.752676426">Telephone: </label>
+            <input type="tel" id="entry.752676426" name="telephone" value="" />
+
+            <label for="entry.584196363">Message: <span class="required">*</span></label>
+            <textarea id="entry.584196363" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+
+            <span id="loading"></span>
+            <input type="submit" value="Submit" id="submit-button" />
+            <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+      </div>
+      <div id="more-contact">
+        <div id="contactIcons">
+          <h5>...or find me on social media</h5>
+          <span class="fa-stack fa-3x">
+           <i class="fa fa-square-o fa-stack-2x"></i>
+           <i class="fa fa-linkedin fa-stack-1x"></i>
+          </span><span class="fa-stack fa-3x">
+           <i class="fa fa-square-o fa-stack-2x"></i>
+           <i class="fa fa-github fa-stack-1x"></i>
+          </span><span class="fa-stack fa-3x">
+           <i class="fa fa-square-o fa-stack-2x"></i>
+           <i class="fa fa-fire  fa-stack-1x"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+   <script src="http://maps.googleapis.com/maps/api/js"></script>
+   <script src="js/menu.js"></script>
+   <script src="js/index.js"></script>
+
+  </body>
+</html>
