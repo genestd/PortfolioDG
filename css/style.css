@@ -322,7 +322,7 @@ color: #ffffff;
      width: 50%;
  }
 }
-@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+@media only screen and (min-width : 1051px) {
  /* Medium desktop: 4 tiles */
  .box {
     width: 25%;
@@ -333,6 +333,7 @@ color: #ffffff;
  #contact-form textarea {
      width: 40%;
  }
+
 }
 /* End Portfolio Section */
 /* Begin contact section */
