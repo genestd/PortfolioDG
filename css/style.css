@@ -1,1 +1,525 @@
 
+body{
+  font-family: 'Pontano Sans', sans-serif;
+  text-align: center;
+
+}
+.pointer{
+  cursor: pointer;
+}
+
+/*  CSS For About Section */
+/* CSS For Header (NAV) section inside frontpage */
+.nav {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+.nav a:hover{
+  color: #ffffff;
+}
+ul.simple-toggle {
+  background-color: #880c30;
+  color: #ffffff;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+ul.simple-toggle li {
+  display: inline-block;
+  text-align: left;
+}
+ul.simple-toggle li a {
+   display: block;
+   padding: 5px 10px;
+   text-decoration: none;
+   color: #ffffff; }
+ul.simple-toggle li a:hover {
+  background-color: #ccc;
+}
+ul.simple-toggle li i {
+  padding-right: 5px;
+}
+.anchor-link {
+  display: none;
+  text-align: right;
+  padding: 0 1em 0;
+  text-align: center;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #880c30;
+  text-decoration: none;
+  margin: 3px;
+  float: right;
+}
+#mobile-nav {
+  display:none;
+}
+
+@media (max-width:500px){
+
+  .nav{
+    width: 105px;
+    background: transparent;
+  }
+	ul.simple-toggle {
+    display: none;
+    text-align: left;
+  }
+	.anchor-link, #mobile-nav {
+    display: inline-block;
+  }
+
+  ul.open {
+    background-color: #880c30;
+    box-shadow: 2px 2px 3px #444444;
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+    top: 100%;
+    z-index: 500;
+	}
+	ul.open li {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+  }
+	ul.open li a {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+   text-decoration: none;
+  }
+	ul.open li a:hover {
+    background-color: #ccc;
+    color: #fff;
+  }
+
+}
+
+/* End Header CSS */
+#frontpage{
+  min-height: 100vh;
+}
+#frontpage h1{
+  color: #880c30;
+  font-size: 48px;
+  padding-top: 10%;
+}
+#frontpage h3{
+  color: #880c30;
+  padding-bottom: 20px;
+}
+#frontpage p{
+  text-align: left;
+}
+/* Image Flip CSS */
+#myLogo, #myPic{
+  max-width: 200px;
+  opacity: 1;
+
+}
+/* entire container, keeps perspective */
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+
+.flip-container, .front, .back {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flipper {
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+/*.flip-container:hover .back, .flip-container.hover .back */
+.flip-front{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+/*.flip-container:hover .front, .flip-container.hover .front */
+.flip-back{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+.front {
+    z-index: 2;
+}
+/* End FrontPage Section */
+
+/* CSS for Portfolio section */
+#portfolio{
+  background-color: #b1b1b1;
+  /*background-image: url(https://www.transparenttextures.com/patterns/subtle-dots.png);*/
+  background-image: url(https://www.transparenttextures.com/patterns/white-brushed.png);
+  }
+.wrap{
+  overflow: hidden;
+}
+h1{
+  color: #880c30;
+  padding-top: 35px;
+  margin-bottom: 0px;
+
+}
+#btnChev{
+  color: #880c30;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.box {
+ float: left;
+ position: relative;
+ width: 20%;
+ padding-bottom: 30%;
+ }
+.boxInner {
+ position: absolute;
+ left: 1px;
+ right: 1px;
+ top: 1px;
+ bottom: 1px;
+ overflow: hidden;
+}
+.boxInner img {
+ width: 100%;
+ position: absolute;
+ top: 50px;
+ left: 0;
+ right: 0;
+ color: #FFF;
+}
+.titleBox {
+background-color: #000000;
+color: #ffffff;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ color: #FFF;
+ padding: 10px;
+ height: 50px;
+ text-align: center;
+}
+.titleBox a{
+  color: #ffffff;
+}
+.aboutBox{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -600px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+}
+.showBox{
+  margin-bottom: 0;
+
+}
+@media only screen and (max-width : 480px) {
+ /* Smartphone view: 1 tile */
+ .box {
+    width: 100%;
+    padding-bottom: 120%;
+ }
+ #contact-form input,
+ #contact-form select,
+ #contact-form textarea {
+     width: 70%;
+ }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+ /* Tablet view: 2 tiles */
+ .box {
+    width: 50%;
+    padding-bottom: 70%;
+ }
+ #contact-form input,
+ #contact-form select,
+ #contact-form textarea {
+     width: 60%;
+ }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+ /* Small desktop / ipad view: 3 tiles */
+ .box {
+    width: 33.3%;
+    padding-bottom: 45%;
+ }
+ #contact-form input,
+ #contact-form select,
+ #contact-form textarea {
+     width: 50%;
+ }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+ /* Medium desktop: 4 tiles */
+ .box {
+    width: 25%;
+    padding-bottom: 35%;
+ }
+ #contact-form input,
+ #contact-form select,
+ #contact-form textarea {
+     width: 40%;
+ }
+}
+/* End Portfolio Section */
+/* Begin contact section */
+#contact{
+  min-height: 100vh;
+}
+
+#contact-form{
+    padding:0 20 20 20;
+    margin: auto;
+    position:relative;
+    text-align: left;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+form{
+  margin-bottom: 0;
+  padding-top: 0;
+}
+#contact-form h1 {
+    font-size:42px;
+    color: #880c30;
+    text-align: center;
+}
+
+#contact h5 {
+  color: #666666;
+  text-align: center;
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    border: 1px solid #aaaaaa;
+    margin-bottom:10px;
+    padding:4px;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-color: #e5e5e5;
+}
+
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+
+#contact-form label {
+    display:block;
+}
+
+#contact-form .required {
+    font-weight:bold;
+    color:#880c30;
+}
+
+#contact-form #submit-button {
+    width: 100px;
+    background-color:#880c30;
+    color:#FFF;
+    border:none;
+    display: block;;
+    margin-bottom:0px;
+    margin-right:6px;
+}
+
+
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../img/loading.gif);
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+}
+
+#errors li {
+    padding:2px;
+    list-style:none;
+}
+
+#errors li:before {
+    content: ' - ';
+}
+
+#errors #info {
+    font-weight:bold;
+}
+
+#errors #info:before {
+    content: '';
+}
+
+#success {
+    border:solid 1px #880c30;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#cccccc url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+}
+
+#errors.visible, #success.visible {
+    display:block;
+}
+
+#req-field-desc {
+    font-style:italic;
+    margin-bottom: 0px;
+}
+
+#googleMap{
+  width: 100%;
+  height: 200px;
+}
+#contactIcons{
+  color: #880c30;
+  background-color: #b1b1b1;
+  /*background-image: url(https://www.transparenttextures.com/patterns/subtle-dots.png);*/
+  background-image: url(https://www.transparenttextures.com/patterns/white-brushed.png);
+
+}
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+/* Normalize placeholder styles */
+
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  {
+    color:#CCC;
+    font-style:italic;
+}
+/* End Contact Section */
